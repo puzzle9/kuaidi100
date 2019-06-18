@@ -1,0 +1,26 @@
+{
+    "name": "puzzle9/kuaidi100",
+    "description": "快递100 接口封装",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "puzzle9",
+            "email": "happypuzzle@126.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "6.*@stable"
+    },
+    "autoload": {
+        "psr-4": {
+            "Puzzle9\\Kuaidi100\\": "./src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Puzzle9\\Kuaidi100\\ServiceProvider"
+            ]
+        }
+    }
+}
