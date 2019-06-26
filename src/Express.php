@@ -8,7 +8,7 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 
 /**
-* 2019年6月18日
+* 2019年6月26日
 */
 class Express
 {
@@ -69,7 +69,7 @@ class Express
             throw new HttpException($e->getMessage(), $e->getCode(), $e);
         }
 
-        return $res;
+        return json_decode($res, true);
     }
 
     /*
@@ -89,7 +89,7 @@ class Express
             throw new HttpException($e->getMessage(), $e->getCode(), $e);
         }
 
-        return $res;
+        return json_decode($res, true);
     }
 
     /*
@@ -120,7 +120,7 @@ class Express
             throw new HttpException($e->getMessage(), $e->getCode(), $e);
         }
 
-        return $res;
+        return json_decode($res, true);
     }
 
     public function getHttpClient()

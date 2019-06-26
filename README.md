@@ -81,6 +81,9 @@ $info = $express->subscribe($company, $number); // 快递服务商 快递单号
  
  ```
 
+# 其他
+- 返回结果为 `json`
+
 # 感谢
 - <https://kuaidi100.com/>
 - <https://github.com/inbjo/express>
