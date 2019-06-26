@@ -123,6 +123,22 @@ class Express
         return json_decode($res, true);
     }
 
+    /*
+    从公司编码获取公司名称
+    https://poll.kuaidi100.com/manager/page/document/kdbm
+    跟新时间 2019年6月26日
+     */
+    public function kdbm($code, $getName=true, $default=null)
+    {
+        $data  = json_decode(file_get_contents(__DIR__.'/data.json'), true);
+
+        if ($getName) {
+            return isset($data[$code]) ? $data[$code] : $default;
+        } else {
+            return array_search($code, $data) ?: $default;
+        }
+    }
+
     public function getHttpClient()
     {
         return new Client($this->guzzleOptions);

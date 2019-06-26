@@ -21,6 +21,9 @@ $info = $express->autonumber($num); // 快递单号
 
 //订阅推送
 $info = $express->subscribe($company, $number); // 快递服务商 快递单号
+
+//从公司编码获取公司名称
+$info = $express->kdbm($code, $getName=true, $default); // 快递编码 是否获取公司名称 未获取到默认返回
 ```
 
 ## 在 Laravel 中使用
