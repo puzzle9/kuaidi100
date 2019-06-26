@@ -86,6 +86,7 @@ $info = $express->kdbm($code, $getName=true, $default); // 快递编码 是否�
 
 # 其他
 - 返回结果为 `json`
+- 可以看看 `test.php` 文件
 
 # 感谢
 - <https://kuaidi100.com/>
