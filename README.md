@@ -1,4 +1,6 @@
 # kuaidi100
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpuzzle9%2Fkuaidi100.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpuzzle9%2Fkuaidi100?ref=badge_shield)
+
 封装快递100 接口
 
 # 使用方法
@@ -95,3 +97,5 @@ $info = $express->kdbm($code, $getName=true, $default); // 快递编码 是否�
 # License
 
 MIT
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpuzzle9%2Fkuaidi100.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpuzzle9%2Fkuaidi100?ref=badge_large)
